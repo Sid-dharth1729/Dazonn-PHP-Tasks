@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+/* login cards */
+.login-cards .card{
+    transition: transform 0.6s ease;
+}
+.login-cards .card::after{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background-color: #1bb1dc;
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    transition: width 0.6s ease;
+}
+.login-cards .card:hover{
+    transform: scale(1.08);
+}
+.login-cards .card:hover::after{
+    width: 100%;
+}
+.btn-color{
+    color: white;
+    background-color: #1bb1dc;
+}
+.btn-color:hover{
+    background-color: #04799a;
+    color: white;
+}
+
+/*Patient Dashboard card */
+.dashboard .card-svg{
+    width: 40px !important;
+    filter: brightness(0) invert(1);
+}
+.dashboard .card-img-div{
+    background-color: #1b8fdc;
+    padding: 8px 4px;
+    border-radius: 6px;
+}
+.dashboard .card{
+    background-color: rgb(246, 252, 254);
+}
+    /* dashborad sidebar */
+.dash-sidebar li:active{
+    width: 100%;
+    border-bottom: 2px solid #1b8fdc;
+}
+
+/* for width 100% in mobile */
+.resp-width{
+    width: 75%;
+}
+@media (max-width: 576px) {
+    .resp-width{
+        width: 100% !important;
+    }
+}
+/* Status in appointment */
+.pending{
+    margin: 0;
+    color: green ;
+    background-color: aquamarine ;
+}
+.completed{
+    margin: 0;
+    color: red;
+    background-color: #f4a8a8;
+}
