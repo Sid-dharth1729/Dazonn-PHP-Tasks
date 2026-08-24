@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+/* utilities */
+.p-txt{
+    color:rgb(74, 83, 85);
+    line-height: 26px;
+    font-family: "DM Sans", sans-serif;
+}
+.sign-text{
+    font-size: 1.1rem;
+}
+.sign-text:hover{
+    color: #525fe1 !important;
+}
+.navbar-nav li {
+    padding-right: 20px;
+}
+.navbar{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    background-color: white;
+}
+.nav-cont{
+    padding: 5px 60px !important ;
+}
+.nav-cont li a{
+     width: fit-content;
+}
+.nav-cont li a:hover{
+    color: #525fe1 !important;
+}
+.nav-cont li a::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #525fe1;
+    transition: width 0.3s ease-in;
+}
+.nav-cont li a:hover::after{
+    width: 100%;
+}
+
+@media (max-width: 786px) {
+    .nav-cont{
+        padding: 5px 20px !important ;
+    }  
+    .nav-cont li a{
+        font-size: 0.8rem !important;
+        font-weight: 500 !important;
+    }  
+    /* search-box */
+    .search-box input {
+        padding: 15px !important;
+    }
+    /* nav profile div */
+    .nav-profile{
+        width: fit-content !important;
+    }
+}
+
+
+/* About */
+.about-top{
+    background-image: url("../images/about-sec.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-top-cont{
+    padding: 150px 0px;
+}
+.s-up-btn{
+    padding: 8px 20px;
+    font-weight: 600;
+    background-color: #525fe1;
+    border: none;
+    color: white;
+}
+.blue-btn{
+    padding: 15px 30px;
+    font-weight: 600;
+    background-color: #525fe1;
+    border: none;
+    color: white;
+}
+.s-up-btn:hover, .blue-btn:hover{
+    color: white;
+    background-color: #f26b65;
+}
+
+/* discription */
+.sec-cont{
+    padding: 50px 5px !important ;
+
+}
+@media (max-width:786px) {
+    .contact-form .sec-cont{
+        padding: 20px 5px !important;
+    }    
+}
+.title-div{
+    margin-bottom: 60px;
+}
+.title-div p{
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+.card-circle{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 50%;
+    background-color: #ffefee;
+    color: #f26b65;
+}
+.card-circle h5{
+    font-size: 1.5rem !important;
+
+}
+.circle-green{
+    background-color: #eafeff;
+    color: #448bb7;
+}
+.circle-violet{
+    background-color: #fdf3fa;
+    color: #57216c;
+}
+.circle-blue{
+    background-color: #ecedff;
+    color: #525fe1;
+}
+.dis-bg{
+    background-image: url('../images/dis-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* About Couses */
+.tick-list{
+    list-style-type: none;
+    padding: 0px 0px 0px 12px;
+}
+.tick-list li::marker{
+    content: "✓";
+    color: #448bb7;
+    font-weight: 600;
+}
+.li-txt{
+    padding-left: 5px;
+    font-weight: 600;
+    line-height: 40px;
+}
+    /* Build Career  */
+.career-card{
+    padding: 80px 40px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.career-1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url('https://themewagon.github.io/eduleb/assets/img/ins1.png');
+    background-position: center;
+    background-size: cover;
+}
+.career-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url('https://themewagon.github.io/eduleb/assets/img/ins2.png');
+    background-position: center;
+    background-size: cover;
+}
+    /* footer */
+footer{
+    background-color: #f5f5fd;
+}
+.footer-list{
+    list-style: none;
+    padding: 0px;
+}
+.footer-list a{
+    line-height: 36px;
+}
+footer a:hover{
+    color: #525fe1 !important;
+}
+.contact-link{
+    padding: 10px 0px;
+}
+footer p{
+    text-align: justify;
+    padding-right: 25px !important;
+}
+/* Copy Footer */
+.copy-footer{
+    background-color: #e8e8ff;
+}
+.copy-footer a:hover{
+    color: white !important;
+}
+
+/* Blog Cards */
+.b-title:hover{
+    color: #525fe1;
+}
+/* home page*/
+.home-top{
+    background-image: url('../images/home-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.person{
+    width: 80px;
+    height: 80px;
+    background-color: #ecedff;
+    border-radius: 50%;
+}
+.person-1{
+    background-color: #f4d3d1;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.num-2{
+    background-color: #caebff;
+}
+.num-3{
+    background-color: #f0ffca;
+}
+.num-4{
+    background-color: #dbc7fd;
+}
+.btm-cards{
+    position: relative;
+    bottom: 60px;
+    /* margin-bottom: 40px; */
+}
+.home-top-img{
+    position: relative;
+}
+.card-above {
+    position: absolute;
+    top: 280px;
+    right: -10px;
+}
+.blue-head{
+    color: #525fe1;
+}
+.home-head{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 74px;
+}
+@media (max-width:786px) {
+    .home-head{
+        font-size: 2rem;
+        line-height: 26px;
+    }
+}
+.search-box{
+    position: relative;
+}
+.s-btn{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.search-box input{
+    border: 1px solid #525fe1;
+    padding: 20px ;
+}
+.home-title{
+    padding-bottom: 120px;
+}
+.slide-over{
+    /* width: 80%; */
+    margin: auto;
+    overflow: hidden;
+    padding: 0px 40px;
+}
+.slide{
+    margin: 0px 40px;
+}
+.brand-slider{
+    animation: slideshow 5s infinite linear;
+}
+@keyframes slideshow {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-200px);
+    }
+    50%{
+        transform: translate(-400px);
+    }
+    75%{
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(-800px);
+    }
+}
+
+/* Contact */
+.bg-1{
+    background-color: #f26b65;
+}
+.bg-2{
+    background-color: #caebff;
+}
+.bg-3{
+    background-color: #e8e8ff;
+}
+/* form */
+.f-bg{
+    background-color: #ebecff;
+    padding: 20px;
+}
+.f-bg:focus{
+    background-color: #eceeee;
+}
+/* sign up form index.php */
+.sign-up-form{
+    background-color: #caebff;
+}
+.s-form-bg:focus{
+    background-color: #ffefee;
+}
+/* Sign Up form */
+.log-in-form{
+    background-color: #f0ffca;
+}
+        /* for password dots */
+input[type="password"]{
+    font-weight: 900;
+}
+input[type="password"]::placeholder{
+    font-weight: normal;
+}
+
+.update-form{
+    background-color: #d3f8f1;
+}
+
+@media (max-width: 786px) {
+    .update-form{
+        width: 100% !important;
+    }   
+
+    .s-up-btn,.blue-btn, .user-sign-btn{
+        padding: 10px 15px !important;
+    }
+    .s-up-btn{
+        margin: 0px !important;
+    }
+}
+
+/* sign-up and sign-in btn */
+.user-sign-btn {
+    padding: 15px 30px;
+    font-weight: 600;
+    background-color: #f26b65;
+    border: none;
+    color: white;
+}
+.user-sign-btn:hover{
+    color: white;
+    background-color: #525fe1;
+}
+
+/* Sign Up Profile div */
+.sup-profile-div {
+    width: 75%;
+}
+
+@media (max-width:576px) {
+    .sup-profile-div {
+        width: 100% !important;
+    }
+    /* form image */
+    .form-img{
+        display: none;
+    }
+    .update-form, .sign-up-form, .log-in-form{
+        border-radius: 0 !important;
+    } 
+}
+/* forms bottom text (have an account text) */
+.form-btm-txt{
+    font-size: 0.8rem !important;
+}
+
+/* Input Img */
+.input-img-text img{
+    filter: brightness(0) saturate(100%) invert(41%) sepia(2%) saturate(0%) hue-rotate(37deg) brightness(101%) contrast(101%);
+}
+/* COURSES Section */
+.clock{
+    width: 15px;
+    padding-bottom: 2px;
+    filter: brightness(0) saturate(100%) invert(38%) sepia(45%) saturate(1660%) hue-rotate(210deg) brightness(90%) contrast(97%);
+}
+.course-card-footer{
+    color: #525fe1;
+}
+
+.course-card-img-div{
+    position: relative;
+} 
+.course-badge{
+    background-color: #525fe1;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 6px;
+    position: absolute;
+    transform: rotate(270deg);
+    top: 80px;
+    left: 0px;
+}
+.courses-card:hover .course-badge{
+    background-color: #f26b65;
+}
+.courses-card:hover .course-card-footer {
+    color: #f26b65;
+}
